@@ -26,3 +26,6 @@ REST framework also introduces a Response object, which is a type of TemplateRes
 `return Response(data)  # Renders to content type as requested by the client.`
 ### Status codes
 Using numeric HTTP status codes in your views doesn't always make for obvious reading, and it's easy to not notice if you get an error code wrong. REST framework provides more explicit identifiers for each status code, such as `HTTP_400_BAD_REQUEST` in the status module. It's a good idea to use these throughout rather than using numeric identifiers.
+
+## Tutorial 3: Class-based Views
+We can also write our API views using class-based views, rather than function based views. As we'll see this is a powerful pattern that allows us to reuse common functionality, and helps us keep our code DRY.
